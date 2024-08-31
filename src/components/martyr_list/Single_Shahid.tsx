@@ -1,26 +1,15 @@
 import { ShahidDataType } from "@/lib/data";
 import Image from "next/image";
 
-const data: ShahidDataType = {
-  id: 1,
-  name: "Abu Sayed",
-  occupation: "Student",
-  address: "Begum Rokeya University, Rangpur",
-  death_place: "Shahabag",
-  death_date: "16th July, 2024",
-  birth_date: "",
-  age: 23,
-  gender: "Male",
-  photo: "https://shohid.info/shohid/abu-sayed.jpg",
-};
-
-const Single_Shahid = () => {
+const Single_Shahid = ({single_shahid}: {single_shahid: ShahidDataType}) => {
+  console.log(single_shahid);
+  
   return (
     <div className="">
       <div className="flex gap-10 mt-5">
         <div className="w-1/3 h-80 relative">
           <Image
-            src={data.photo}
+            src={single_shahid?.photo}
             alt=""
             fill
             className="object-cover rounded-lg"
@@ -36,11 +25,11 @@ const Single_Shahid = () => {
               <p>Death Place:</p>
             </div>
             <div className="w-4/5 flex flex-col gap-2">
-              <p>{data.name}</p>
-              <p>{data.occupation}</p>
-              <p>{data.address}</p>
-              <p>{data.age}</p>
-              <p>{data.death_place}</p>
+              <p>{single_shahid?.name}</p>
+              <p>{single_shahid?.occupation}</p>
+              <p>{single_shahid?.address}</p>
+              <p>{single_shahid?.age}</p>
+              <p>{single_shahid?.death_place}</p>
             </div>
           </div>
           <div className="h-screen">
@@ -49,7 +38,7 @@ const Single_Shahid = () => {
               recusandae magni laborum incidunt sit quos labore iusto aperiam
               velit deserunt maxime!
             </p>
-            <div className="whitespace-pre-wrap">
+            <div className="whitespace-pre-line">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
               veritatis dolores, possimus sed perspiciatis rem deleniti
               distinctio itaque neque dicta aliquam ad velit eveniet
@@ -80,6 +69,7 @@ const Single_Shahid = () => {
               Voluptatum suscipit odio obcaecati ab rem libero odit excepturi
               temporibus facere.
             </div>
+
           </div>
         </div>
       </div>
