@@ -14,7 +14,7 @@ const Navbar = () => {
       headline = "What happened during those days";
       break;
 
-    case "/martyr_list":
+    case "/shahid_list":
       headline = "The List of the Martyr of the Cota Movement";
       break;
   

@@ -9,7 +9,7 @@ const sidebarMenu = [
     menu: "Events Flow",
   },
   {
-    link: "/martyr_list",
+    link: "/shahid_list",
     menu: "Martyr List",
   },
   {

@@ -1,7 +1,12 @@
-import { shahidList } from "@/lib/data";
+import { ShahidDataType } from "@/lib/data";
 import Image from "next/image";
 
-const Martyr_List = () => {
+const Shahid_List_Table = ({
+  shahidData,
+}: {
+  shahidData: ShahidDataType[];
+}) => {
+  
   return (
     <div className="">
       <div className="overflow-auto max-h-[420px] bg-white shadow-lg rounded-lg border border-slate-20">
@@ -19,7 +24,7 @@ const Martyr_List = () => {
             </tr>
           </thead>
           <tbody>
-            {shahidList.map((list, index) => (
+            {shahidData.map((list, index) => (
               <tr
                 className="h-16 text-sm border-b border-slate-200 shadow-sm hover:bg-slate-100"
                 key={index}
@@ -28,10 +33,7 @@ const Martyr_List = () => {
                 <td>
                   <div className="h-12 w-20 relative py-4">
                     <Image
-                      src={
-                        list.photo ||
-                        "https://netra.news/content/images/size/w2000/2024/07/Netra_Death_Quota-01.png"
-                      }
+                      src={list.photo}
                       alt=""
                       fill
                       className="object-cover rounded-sm"
@@ -39,7 +41,7 @@ const Martyr_List = () => {
                   </div>
                 </td>
                 <td className="font-semibold">{list.name}</td>
-                <td>{list.ocupation}</td>
+                <td>{list.occupation}</td>
                 <td className="pl-2">{list.age}</td>
                 <td>{list.address}</td>
                 <td className="p-3">{list.death_date.split(",")[0]}</td>
@@ -53,4 +55,4 @@ const Martyr_List = () => {
   );
 };
 
-export default Martyr_List;
+export default Shahid_List_Table;

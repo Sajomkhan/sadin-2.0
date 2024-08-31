@@ -52,6 +52,10 @@
 
 }
 
+  .text_container{
+    white-space: pre-wrap; 
+  }
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
