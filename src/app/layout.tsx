@@ -20,20 +20,20 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="max-w-[1400px] mx-auto">
-          <div className="flex flex-col gap-0.5">
+          <div className="flex flex-col">
             {/* NAVBAR */}
-            <div className="bg-white h_nav flex items-center px-4">
+            <div className="bg-white h_nav flex items-center px-4 sticky top-0 z-20 border-b-2 border-slate-100">
               <Navbar />
             </div>
 
             <div className="flex gap-0.5">
               {/* SIDEBAR */}
-              <div className="w-1/6 bg-white rounded-b-md p-7 pb-24">
+              <div className="w-1/6 bg-white rounded-b-md p-7 pb-24 sticky top-0 z-10 ">
                 <Sidebar />
               </div>
 
               {/* BODY */}
-              <div className="w-5/6 bg-white rounded-b-md py-4 px-12">{children}</div>
+              <div className="w-5/6 bg-white rounded-b-md py-4 px-12 ">{children}</div>
             </div>
           </div>
           <div></div>

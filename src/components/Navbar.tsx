@@ -17,6 +17,22 @@ const Navbar = () => {
     case "/shahid_list":
       headline = "The List of the Martyr of the Cota Movement";
       break;
+
+    case "/our_heros":
+      headline = "Six coordinators of Students Against Discrimination";
+      break;
+
+    case "/government_act":
+      headline = "Students plan new party to cement their revolution";
+      break;
+
+    case "/police_role":
+      headline = "The List of the Martyr of the Cota Movement";
+      break;
+
+    case "/army_role":
+      headline = "The List of the Martyr of the Cota Movement";
+      break;
   
   }
 
@@ -27,8 +43,8 @@ const Navbar = () => {
         SADHIN-2.0
       </Link>
       {/* HEADLINE */}
-      <div className="w-5/6">
-          <h4 className="text-center">{headline}</h4>
+      <div className="w-5/6 mr-16">
+          <h4 className="text-center text-ground">{headline}</h4>
       </div>
     </div>
   );

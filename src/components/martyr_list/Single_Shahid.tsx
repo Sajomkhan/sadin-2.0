@@ -2,11 +2,9 @@ import { ShahidDataType } from "@/lib/data";
 import Image from "next/image";
 
 const Single_Shahid = ({single_shahid}: {single_shahid: ShahidDataType}) => {
-  console.log(single_shahid);
   
   return (
-    <div className="">
-      <div className="flex gap-10 mt-5">
+      <div className="flex gap-10 mt-10 ">
         <div className="w-1/3 h-80 relative">
           <Image
             src={single_shahid?.photo}
@@ -39,6 +37,7 @@ const Single_Shahid = ({single_shahid}: {single_shahid: ShahidDataType}) => {
               velit deserunt maxime!
             </p>
             <div className="whitespace-pre-line">
+              
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
               veritatis dolores, possimus sed perspiciatis rem deleniti
               distinctio itaque neque dicta aliquam ad velit eveniet
@@ -73,7 +72,6 @@ const Single_Shahid = ({single_shahid}: {single_shahid: ShahidDataType}) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

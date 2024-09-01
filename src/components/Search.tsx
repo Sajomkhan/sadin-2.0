@@ -22,7 +22,7 @@ const Search = ({ placeholder }: {placeholder:string}) => {
 
   return (
     <div className="flex gap-3 items-center w-96 border rounded-lg px-3 py-2">
-      <Image src="/search.png" alt="" width={18} height={18}/>
+      <Image src="/icon/search.png" alt="" width={18} height={18}/>
       <input
         type="text"
         placeholder={placeholder}

@@ -22,7 +22,7 @@ const p_single_shahid= shahidListProps.find(value => value.name === q_name)
 const single_shahid = p_single_shahid? p_single_shahid : shahidListProps[0]
 
 
-  return <div className="flex flex-col gap-5">
+  return <div className="flex flex-col gap-3">
     <Search placeholder="Search"  />
     <Shahid_List_Table shahidData = {shahidListProps}/>
     <Single_Shahid single_shahid = {single_shahid}/>

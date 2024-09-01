@@ -4,8 +4,10 @@
 
 :root {
   /* All this root colors was added to config file */
-  --primary: #f50549;
+  --primary: #ff0e0e;
   --primary_dark: #d3043f;
+  --ground: #02b529;
+  --ground_dark: #02851e;
 }
 
 @layer base {
@@ -19,6 +21,7 @@
 
   .h_cal {
     min-height: calc(100vh - 6.25rem); 
+    width: 1rem;
   }
 
   button {
