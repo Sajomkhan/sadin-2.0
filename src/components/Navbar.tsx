@@ -32,8 +32,7 @@ const Navbar = () => {
 
     case "/army_role":
       headline = "The List of the Martyr of the Cota Movement";
-      break;
-  
+      break;  
   }
 
   return (
@@ -44,7 +43,7 @@ const Navbar = () => {
       </Link>
       {/* HEADLINE */}
       <div className="w-5/6 mr-16">
-          <h4 className="text-center text-ground">{headline}</h4>
+          <h4 className="text-center">{headline}</h4>
       </div>
     </div>
   );

@@ -7,8 +7,8 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lama Dev School Management Dashboard",
-  description: "Next.js School Management System",
+  title: "Sadhin-02",
+  description: `On 15 July 2024, students of Dhaka University were sitting with placards and flags in a peaceful protest calling for reforms on the quota allocation for government jobs in Bangladesh.  Suddenly, they were attacked by individuals armed with rods, sticks and clubs with a few even brandishing revolvers. Within hours, a pattern emerged across the country with similar attacks coordinated by people believed to be members of the Bangladesh Chatra League (BCL), a group affiliated with the ruling Awami League (AL), against student protesters. The six coordinators of the students against discrimination, a platform that waged the quota reform movement, have been released from the custody of the Detective Branch (DB) of the Dhaka Metropolitan Police (DMP). They came out of the DB office around 1:30 pm in a black car. DB’s Ramna zone additional commissioner (ADC) Azhar Mukul confirmed their release. Earlier, the families of the six coordinators entered into the DB office.`,
 };
 
 export default function RootLayout({
