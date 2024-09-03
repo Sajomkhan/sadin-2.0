@@ -1,9 +1,18 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
 
-const Search = ({ placeholder }: {placeholder:string}) => {
+type ViewSizeType = "small" | "big";
+
+const Search = ({
+  placeholder,
+  viewSize,
+}: {
+  placeholder: string;
+  viewSize: ViewSizeType;
+}) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -21,14 +30,26 @@ const Search = ({ placeholder }: {placeholder:string}) => {
   }, 400);
 
   return (
-    <div className="flex gap-3 items-center w-96 border rounded-lg px-3 py-2">
-      <Image src="/icon/search.png" alt="" width={18} height={18}/>
-      <input
-        type="text"
-        placeholder={placeholder}
-        className="w-full"
-        onChange={handleSearch}
-      />
+    <div className="flex gap-7 items-center">
+      <div className="flex gap-3 items-center w-96 border rounded-lg px-3 py-2">
+        <Image src="/icon/search.png" alt="" width={18} height={18} />
+        <input
+          type="text"
+          placeholder={placeholder}
+          className="w-full"
+          onChange={handleSearch}
+        />
+      </div>
+      {viewSize === "big" && (
+        <Link href="/shahid_list" className="h-fit border border-ground text-ground hover:bg-green-200">
+          View Small
+        </Link>
+      )}
+      {viewSize === "small" && (
+        <Link href="/shahid_card" className="h-fit border border-ground text-ground hover:bg-green-200">
+          View Big
+        </Link>
+      )}
     </div>
   );
 };

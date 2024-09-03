@@ -1,9 +1,5 @@
 const Our_Heros = () => {
-  return (
-    <div className=''>
-      Six coordinators of Students Against Discrimination
-    </div>
-  )
-}
+  return <div className="">Our Heros</div>;
+};
 
-export default Our_Heros
+export default Our_Heros;

@@ -25,15 +25,23 @@
   }
 
   button {
-    @apply cursor-pointer hover:transition-all ease-linear duration-300;
+    @apply cursor-pointer hover:transition-all rounded-md ease-linear duration-200 px-3;
+  }
+
+  Link{
+    @apply cursor-pointer hover:transition-all rounded-md ease-linear duration-200 px-3;
+  }
+  
+  .btn {
+    @apply hover:bg-ground hover:text-white;
+  }
+
+  .btn_l {
+    @apply border border-ground text-ground hover:bg-green-200
   }
 
   input {
     @apply bg-transparent outline-none;
-  }
-
-  .btn {
-    @apply hover:bg-primary hover:text-white;
   }
 
   h1 {

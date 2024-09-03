@@ -2,8 +2,10 @@ import Shahid_List_Table from "@/components/shahid_list/Shahid_List_Table";
 import Search from "@/components/Search";
 import { shahidData } from "@/lib/data";
 import Single_Shahid from "@/components/shahid_list/Single_Shahid";
+import Card from "@/components/shahid_card/Card";
+import ViewSize from "@/components/shahid_card/ViewSize";
 
-const Shahid_List = ({ searchParams }: { searchParams: any }) => {
+const Shahid_Card_Page = ({ searchParams }: { searchParams: any }) => {
   const q = searchParams?.q || "";
   const q_name = searchParams?.name || "params not working";
   // const q = searchParams?.get("q") || "Params is not working";
@@ -24,12 +26,14 @@ const Shahid_List = ({ searchParams }: { searchParams: any }) => {
   const single_shahid = p_single_shahid ? p_single_shahid : shahidListProps[0];
 
   return (
-    <div className="flex flex-col gap-3">
-      <Search placeholder="Search" viewSize="small" />
-      <Shahid_List_Table shahidData={shahidListProps} />
+    <div className="flex flex-col gap-7">
+      <div className="flex gap-10">
+        <Search placeholder="Search" viewSize="big" />
+      </div>
+      <Card shahidData={shahidListProps} />
       <Single_Shahid single_shahid={single_shahid} />
     </div>
   );
 };
 
-export default Shahid_List;
+export default Shahid_Card_Page;
