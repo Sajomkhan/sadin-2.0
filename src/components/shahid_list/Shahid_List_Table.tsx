@@ -57,7 +57,7 @@ const Shahid_List_Table = ({
                 </td>
                 <td className="font-semibold">{item.name}</td>
                 <td>{item.occupation}</td>
-                <td className="pl-2">{item.age}</td>
+                <td className="pl-2">{item.age ? item.age : 25}</td>
                 <td>{item.address}</td>
                 <td className="p-3">{item.death_date.split(",")[0]}</td>
                 <td>{item.death_place}</td>

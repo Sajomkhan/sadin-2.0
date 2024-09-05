@@ -27,7 +27,10 @@ const Shahid_List = ({ searchParams }: { searchParams: any }) => {
     <div className="flex flex-col gap-3">
       <Search placeholder="Search" viewSize="small" />
       <Shahid_List_Table shahidData={shahidListProps} />
+      <div className="max-w-4xl mx-auto">
+
       <Single_Shahid single_shahid={single_shahid} />
+      </div>
     </div>
   );
 };

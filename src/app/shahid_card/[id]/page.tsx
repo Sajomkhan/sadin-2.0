@@ -9,7 +9,7 @@ const Page = ({ params }: { params: { id: number }}) => {
     
 
   return (
-    <div className='w-[800px] mx-auto'>
+    <div className='max-w-4xl mx-auto'>
         <Single_Shahid single_shahid={single_shahid} />
     </div>
   )

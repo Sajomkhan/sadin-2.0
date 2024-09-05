@@ -3,7 +3,6 @@ import Search from "@/components/Search";
 import { shahidData } from "@/lib/data";
 import Single_Shahid from "@/components/shahid_list/Single_Shahid";
 import Card from "@/components/shahid_card/Card";
-import ViewSize from "@/components/shahid_card/ViewSize";
 
 const Shahid_Card_Page = ({ searchParams }: { searchParams: any }) => {
   const q = searchParams?.q || "";

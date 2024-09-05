@@ -31,7 +31,7 @@ const Search = ({
 
   return (
     <div className="flex gap-7 items-center">
-      <div className="flex gap-3 items-center w-96 border rounded-lg px-3 py-2">
+      <div className="flex gap-3 items-center w-96 border border-gray-300 rounded-lg px-3 py-2">
         <Image src="/icon/search.png" alt="" width={18} height={18} />
         <input
           type="text"
@@ -41,12 +41,12 @@ const Search = ({
         />
       </div>
       {viewSize === "big" && (
-        <Link href="/shahid_list" className="btn_l h-fit">
+        <Link href="/shahid_list" className="btn_l h-fit py-2">
           View Small
         </Link>
       )}
       {viewSize === "small" && (
-        <Link href="/shahid_card" className="h-fit border border-ground text-ground hover:bg-green-200">
+        <Link href="/shahid_card" className="btn_l h-fit py-2">
           View Big
         </Link>
       )}
