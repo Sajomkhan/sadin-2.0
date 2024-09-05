@@ -101,7 +101,7 @@ export const shahidData: ShahidDataType[] = [
     photo: "https://shohid.info/shohid/faisal-ahmed-shanto.jpg",
   },
   {
-    id: 9,
+    id: 7,
     name: "Fatema Khatun",
     occupation: "Student",
     address: "Barisal, Bangladesh",
@@ -115,7 +115,7 @@ export const shahidData: ShahidDataType[] = [
     photo: "https://shohid.info/shohid/tahmid-tamim.jpg",
   },
   {
-    id: 10,
+    id: 8,
     name: "Jamil Hasan",
     occupation: "Teacher",
     address: "Rangpur, Bangladesh",
@@ -132,7 +132,7 @@ export const shahidData: ShahidDataType[] = [
 
 export const shahidDataBangla: ShahidDataType[] = [
   {
-    id: 1,
+    id: 9,
     name: "আবু সাইদ",
     occupation: "শিক্ষার্থী",
     address: "জাফরপাড়া, পীরগঞ্জ উপজেলা, রংপুর ",
@@ -146,7 +146,7 @@ export const shahidDataBangla: ShahidDataType[] = [
     photo: "https://shohid.info/shohid/abu-sayed.jpg",
   },
   {
-    id: 2,
+    id: 10,
     name: "মীর মাহফুজুর রহমান মুগ্ধ",
     occupation: "শিক্ষার্থী 	মুক্তপেশা",
     address: "উত্তরা, ঢাকা",
@@ -160,7 +160,7 @@ export const shahidDataBangla: ShahidDataType[] = [
     photo: "https://shohid.info/shohid/mir-mugdho.jpg",
   },
   {
-    id: 3,
+    id: 11,
     name: "শাইখ আসহাবুল ইয়ামিন",
     occupation: "শিক্ষার্থী",
     address: "কুমারখালী, কুষ্টিয়া, খুলনা",

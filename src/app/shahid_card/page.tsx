@@ -31,7 +31,6 @@ const Shahid_Card_Page = ({ searchParams }: { searchParams: any }) => {
         <Search placeholder="Search" viewSize="big" />
       </div>
       <Card shahidData={shahidListProps} />
-      <Single_Shahid single_shahid={single_shahid} />
     </div>
   );
 };

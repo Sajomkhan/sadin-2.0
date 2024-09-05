@@ -5,13 +5,22 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
 
   const pathname = usePathname()
+  
 
-  let headline 
+  let headline
+
+  if(pathname.split("/")[2]) {
+    headline = "Details About The Martyr"
+  }
   
   switch (pathname) {
 
     case "/":
       headline = "What happened during those days";
+      break;
+
+    case "/shahid_card":
+      headline = "The List of the Martyr of the Cota Movement";
       break;
 
     case "/shahid_list":
@@ -43,7 +52,7 @@ const Navbar = () => {
       </Link>
       {/* HEADLINE */}
       <div className="w-5/6 mr-16">
-          <h4 className="text-center">{headline}</h4>
+          <h4 className="text-center text-gray-800">{headline}</h4>
       </div>
     </div>
   );

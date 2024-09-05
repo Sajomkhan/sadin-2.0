@@ -41,7 +41,7 @@ const Search = ({
         />
       </div>
       {viewSize === "big" && (
-        <Link href="/shahid_list" className="h-fit border border-ground text-ground hover:bg-green-200">
+        <Link href="/shahid_list" className="btn_l h-fit">
           View Small
         </Link>
       )}

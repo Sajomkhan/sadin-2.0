@@ -37,7 +37,7 @@
   }
 
   .btn_l {
-    @apply border border-ground text-ground hover:bg-green-200
+    @apply border hover:bg-gray-200 rounded-md px-3 py-1 text-gray-800
   }
 
   input {

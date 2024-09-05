@@ -9,7 +9,7 @@ const Single_Shahid = ({
   return (
     <div className="flex flex-col gap-6">
       <div className="flex gap-10 mt-10 items-center">
-        <div className="w-1/3 h-80 relative">
+        <div className="w-2/5 h-80 relative">
           <Image
             src={single_shahid?.photo}
             alt=""
@@ -17,7 +17,7 @@ const Single_Shahid = ({
             className="object-cover rounded-lg"
           />
         </div>
-        <div className="w-2/3 flex flex-col gap-8">
+        <div className="w-3/5 flex flex-col gap-8">
           <div className="flex gap-10">
             <div className="w-1/5 flex flex-col gap-2 font-semibold">
               <p>Name:</p>
