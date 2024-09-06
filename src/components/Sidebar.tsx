@@ -9,12 +9,12 @@ const sidebarMenu = [
     menu: "Events Flow",
   },
   {
-    link: "/shahid_card",
-    menu: "Shahid List Card",
-  },
-  {
     link: "/shahid_list",
     menu: "Martyr List",
+  },
+  {
+    link: "/shahid_card",
+    menu: "Martyr List Card",
   },
   {
     link: "/our_heros",

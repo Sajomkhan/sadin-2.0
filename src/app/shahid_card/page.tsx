@@ -25,7 +25,7 @@ const Shahid_Card_Page = ({ searchParams }: { searchParams: any }) => {
   const single_shahid = p_single_shahid ? p_single_shahid : shahidListProps[0];
 
   return (
-    <div className="flex flex-col gap-7">
+    <div className="flex flex-col gap-7 pb-7">
       <div className="flex gap-10">
         <Search placeholder="Search" viewSize="big" />
       </div>

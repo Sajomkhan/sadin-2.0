@@ -28,7 +28,7 @@ const Navbar = () => {
       break;
 
     case "/our_heros":
-      headline = "Six coordinators of Students Against Discrimination";
+      headline = "Coordinators of Students Against Discrimination";
       break;
 
     case "/government_act":
@@ -51,7 +51,7 @@ const Navbar = () => {
         SADHIN-2.0
       </Link>
       {/* HEADLINE */}
-      <div className="w-5/6 mr-16">
+      <div className="w-5/6">
           <h4 className="text-center text-gray-800">{headline}</h4>
       </div>
     </div>

@@ -22,7 +22,7 @@ export default function RootLayout({
         <div className="max-w-[1400px] mx-auto bg-white">
           <div className="flex flex-col">
             {/* NAVBAR */}
-            <div className="h_nav flex items-center px-4 sticky top-0 z-20 bg-white border-b-2 border-slate-200">
+            <div className="h_nav flex items-center px-7 sticky top-0 z-20 bg-white border-b-2 border-slate-200">
               <Navbar />
             </div>
 

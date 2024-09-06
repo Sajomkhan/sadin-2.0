@@ -22,7 +22,7 @@ const News = () => {
         <div className="w-3/5 flex flex-col gap-2">
           <div className="text-lg font-semibold">{item.title}</div>
           <div className="text-sm">{item.publisher}</div>
-          <div className="">{item.desc}</div>
+          <div className="">{item.desc.slice(0, 250)}...</div>
         </div>
       </Link>
     ))}

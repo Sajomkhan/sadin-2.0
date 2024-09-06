@@ -7,8 +7,8 @@ const Single_Shahid = ({
   single_shahid: ShahidDataType;
 }) => {
   return (
-    <div className="flex flex-col gap-6">
-      <div className="flex gap-10 mt-10 items-center">
+    <div className="flex flex-col gap-6 pb-7">
+      <div className="flex gap-8 mt-10 items-center">
         <div className="w-2/5 h-80 relative">
           <Image
             src={single_shahid?.photo}
@@ -17,24 +17,24 @@ const Single_Shahid = ({
             className="object-cover rounded-lg"
           />
         </div>
-        <div className="w-3/5 flex flex-col gap-8">
-          <div className="flex gap-10">
-            <div className="w-1/5 flex flex-col gap-2 font-semibold">
+        <div className="w-3/5 flex flex-col gap-6">
+          <div className="flex gap-8">
+            <div className="w-1/5 flex flex-col gap-1 font-semibold">
               <p>Name:</p>
               <p>Occupation:</p>
               <p>Address:</p>
-              <p>Age:</p>
+              <p>Age: </p>
               <p>Death Place:</p>
             </div>
-            <div className="w-4/5 flex flex-col gap-2">
+            <div className="w-4/5 flex flex-col gap-1">
               <p>{single_shahid?.name}</p>
               <p>{single_shahid?.occupation}</p>
-              <p>{single_shahid?.address}</p>
-              <p>{single_shahid?.age}</p>
+              <p className="text-sm">{single_shahid?.address}</p>
+              <p>{single_shahid?.age ? single_shahid.age : 25} years</p>
               <p>{single_shahid?.death_place}</p>
             </div>
           </div>
-            <p className="text-lg font-semibold mt-4">
+            <p className="text-lg font-semibold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
               recusandae magni laborum incidunt sit quos labore iusto aperiam
               velit deserunt maxime!
